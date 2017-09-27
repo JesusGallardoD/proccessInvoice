@@ -1,0 +1,28 @@
+<mvc:View controllerName="com.gmexico.sup.invproccessInvoice.controller.Detail" xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Page id="detailPage" showNavButton="true" navButtonPress="onNavBack">
+		<Panel id="detailPanel" expandable="true" expanded="false" headerText="Detalles" width="auto" class="sapUiResponsiveMargin"/>
+		<Table id="detailTable" mode="MultiSelect">
+			<columns>
+				<Column>
+					<Label text="Descripcion"/>
+				</Column>
+				<Column>
+					<Label text="Cantidad"/>
+				</Column>
+				<Column>
+					<Label text="Monto Unitario"/>
+				</Column>
+				<Column>
+					<Label text="Monto Total"/>
+				</Column>
+			</columns>
+		</Table>
+		<footer>
+			<OverflowToolbar id="otbFooter">
+				<ToolbarSpacer/>
+				<Button text="Facturar" press="toInvoice"/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

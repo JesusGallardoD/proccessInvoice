@@ -1,0 +1,129 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"id": "com.gmexico.sup.invproccessInvoice",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_belize"]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "com.gmexico.sup.invproccessInvoice.view.UserValidation",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.ushell": {},
+				"sap.collaboration": {},
+				"sap.ui.comp": {},
+				"sap.uxap": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.gmexico.sup.invproccessInvoice.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}],
+			"js": [{
+				"uri": "libs/xml2json.js"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "com.gmexico.sup.invproccessInvoice.view",
+				"controlId": "com.gmexico.sup.invproccessInvoice",
+				"transition": "slide",
+				"controlAggregation": "pages"
+			},
+			"routes": [{
+				"pattern": "",
+				"name": "UserValidation",
+				"target": "UserValidation"
+			}, {
+				"pattern": "detail/{invoiceId}",
+				"name": "detail",
+				"target": "detail"
+			}, {
+				"pattern": "main",
+				"name": "main",
+				"target": "main"
+			}, {
+				"pattern": "DocumentReview",
+				"name": "DocumentReview",
+				"target": "DocumentReview"
+			}, {
+				"pattern": "UploadFile",
+				"name": "UploadFile",
+				"target": "UploadFile"
+			}],
+			"targets": {
+				"UserValidation": {
+					"viewName": "UserValidation",
+					"viewLevel": 1
+				},
+				"main": {
+					"viewName": "IconTabBar",
+					"viewLevel": 2
+				},
+				"detail": {
+					"viewName": "Detail",
+					"viewLevel": 3
+				},
+				"DocumentReview": {
+					"viewName": "DocumentReview",
+					"viewLevel": 4
+				},
+				"UploadFile": {
+					"viewName": "UploadFile",
+					"viewLevel": 5
+				}
+			}
+		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
+	}
+}

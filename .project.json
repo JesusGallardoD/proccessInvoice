@@ -1,0 +1,41 @@
+{
+  "projectType": [
+    "sap.watt.uitools.ide.fiori",
+     "sap.html5"
+  ],
+  "build": {
+    "targetFolder": "dist",
+    "sourceFolder": "webapp"
+  },
+  "generation": [
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationProjectCommon",
+      "templateVersion": "1.32.0",
+      "dateTimeStamp": "Fri, 15 Sep 2017 18:39:52 GMT"
+    }
+  ],
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "basevalidator": {
+    "services": {
+      "xml": "fioriXmlAnalysis",
+      "js": "fioriJsValidator"
+    }
+  },
+  "codeCheckingTriggers": {
+    "notifyBeforePush": true,
+    "notifyBeforePushLevel": "Error",
+    "blockPush": false,
+    "blockPushLevel": "Error"
+  },
+  "hcpdeploy": {
+    "account": "s0016914252trial",
+    "name": "invproccessInvoice",
+    "lastVersionWeTriedToDeploy": "1.0.3"
+  }
+}

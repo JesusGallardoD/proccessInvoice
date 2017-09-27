@@ -1,0 +1,34 @@
+{
+    "application": {
+        "id": "",
+        "title": "invproccessInvoice",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/webapp",
+        "appUrl": "#invproccessInvoice-Display",
+        "navigationComponentName": "invproccessInvoice",
+        "intentSemanticObject": "invproccessInvoice",
+        "intentAction": "Display",
+        "html5ApplicationName": "invproccessInvoice",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "fb4354e4-3b94-4f33-9527-aab907ef5aa2"
+        ],
+        "contentPackages": [
+            "607e2d64-ac7e-46a9-9bed-ab4b73c9151d"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Portal Proveedores",
+        "subtitle": "Facturacion",
+        "searchKeywords": "Portal Proveedores,Facturacion",
+        "displayIconUrl": "sap-icon://approvals",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

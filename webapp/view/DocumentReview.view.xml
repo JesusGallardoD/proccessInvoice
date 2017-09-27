@@ -1,0 +1,39 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:F="sap.ui.layout.form" xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:l="sap.ui.layout" controllerName="com.gmexico.sup.invproccessInvoice.controller.DocumentReview" displayBlock="true">
+	<App id="com.gmexico.sup.invproccessInvoice">
+		<Page backgroundDesign="Transparent" showFooter="false" showHeader="false" showSubHeader="false">
+			<VBox class="sapuiSmallMargin" justifyContent="Center" alignItems="Center">
+				<F:SimpleForm title="Document Review">
+				    <F:customData>
+				    <sap.ui.core:CustomData key="w5g.dt.editable" value="true" xmlns:sap.ui.core="sap.ui.core" id="__data10"/>
+				    </F:customData>
+				</F:SimpleForm>
+				<Panel id="productDetailsPanel" headerText="Addenda" class="sapUiResponsiveMargin" width="auto">
+					<l:Grid defaultSpan="L3 M6 S12" containerQuery="true">
+						<Label text="xmlns:"/>
+						<Input id="xmlns" placeholder="xmlns" value=""/>
+			
+						<Label text="Oficina de pago:"/>
+						<Input id="office" placeholder="Oficina de pago" value=""/>
+			
+						<Label text="Proveedor:"/>
+						<Input id="provider" placeholder="Proveedor" value=""/>
+			
+						<Label text="Documento:"/>
+						<Input id="kindDocument" placeholder="Tipo de Document" value=""/>
+			
+						<Label text="Email:"/>
+						<Input id="email" placeholder="email" value=""/>
+						
+						<Label text="Categoria:"/>
+						<Input id="category" placeholder="Categoria" value=""/>
+						
+						<Label text="Orden:"/>
+						<Input id="order" placeholder="Orden" value=""/>
+						
+						<Button text="Facturar" press="onPress" width="300px" />
+					</l:Grid>
+				</Panel>
+			</VBox>
+		</Page>
+	</App>
+</mvc:View>

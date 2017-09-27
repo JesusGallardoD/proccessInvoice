@@ -1,0 +1,16 @@
+{
+	"BlackList": [
+		{
+			"Id": "1239001",
+			"name":"Armando"
+		},
+		{
+			"Id": "1239003",
+			"name":"Jose"
+		},
+		{
+			"Id": "1239002",
+			"name":"Jesus"
+		}
+	]
+}

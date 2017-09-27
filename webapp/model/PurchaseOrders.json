@@ -1,0 +1,143 @@
+{
+	"PurchaseOrders": [
+		{
+			"Id": "1239001",
+			"Total": 4500000,
+			"Currency": "MXN",
+			"InvoiceLevel": 1,
+			"Date": "10-02-2017",
+			"items":[ {"Product":"Sillas", "Quantity":30, "UnitPrice":3000, "Invoiced": "True"},
+					  {"Product":"Mesas", "Quantity":20, "UnitPrice":6000, "Invoiced": "True"},
+			          {"Product":"Tazas", "Quantity":100, "UnitPrice":4000, "Invoiced": "True"}]
+		},
+		{
+			"Id": "1239002",
+			"Total": 2850000,
+			"Currency": "MXN",
+			"InvoiceLevel": 3,
+			"Date": "10-03-2017",
+			"items":[ {"Product":"Laptos", "Quantity":50, "UnitPrice":500000, "Invoiced": "True"},
+					  {"Product":"Sillas", "Quantity":30, "UnitPrice":3000, "Invoiced": "False"}]
+		},
+		{
+			"Id": "1239003",
+			"Total": 100000,
+			"Currency": "MXN",
+			"InvoiceLevel": 3,
+			"Date": "05-01-2017",
+			"items":[ {"Product":"Laptos", "Quantity":50, "UnitPrice":500000, "Invoiced": "False"},
+					  {"Product":"Impresoras", "Quantity":20, "UnitPrice":400000, "Invoiced": "False"}]
+		},
+		{
+			"Id": "1239004",
+			"Total": 200000,
+			"Currency": "MXN",
+			"InvoiceLevel": 3,
+			"Date": "13-02-2017",
+			"items":[ {"Product":"Laptos", "Quantity":50, "UnitPrice":500000, "Invoiced": "False"},
+					  {"Product":"Telefonos Celulares", "Quantity":30, "UnitPrice":300000, "Invoiced": "True"}]
+		},
+		{
+			"Id": "1239005",
+			"Total": 7200000,
+			"Currency": "MXN",
+			"InvoiceLevel": 3,
+			"Date": "01-03-2017",
+			"items":[{"Product":"Laptos", "Quantity":50, "UnitPrice":500000, "Invoiced": "False"}]
+		},
+		{
+			"Id": "1239006",
+			"Total": 236800,
+			"Currency": "MXN",
+			"InvoiceLevel": 1,
+			"Date": "24-01-2017",
+			"items":[ {"Product":"Mesas", "Quantity":20, "UnitPrice":6000, "Invoiced": "True"},
+			          {"Product":"Telefonos Celulares", "Quantity":30, "UnitPrice":300000, "Invoiced": "True"}]
+		}, 
+		{
+			"Id": "1239007",
+			"Total": 7000000,
+			"Currency": "MXN",
+			"InvoiceLevel": 3,
+			"Date": "14-02-2017",
+			"items":[{"Product":"Sillas", "Quantity":30, "UnitPrice":3000, "Invoiced": "False"},
+			         {"Product":"Tazas", "Quantity":100, "UnitPrice":4000, "Invoiced": "False"}]
+		},
+		{
+			"Id": "1239008",
+			"Total": 150000,
+			"Currency": "MXN",
+			"InvoiceLevel": 3,
+			"Date": "16-01-2017",
+			"items":[{"Product":"Sillas", "Quantity":30, "UnitPrice":3000, "Invoiced": "True"},
+			         {"Product":"Laptos", "Quantity":50, "UnitPrice":500000, "Invoiced": "False"}]
+		},
+		{
+			"Id": "1239009",
+			"Total": 200000,
+			"Currency": "MXN",
+			"InvoiceLevel": 1,
+			"Date": "27-03-2017",
+			"items":[{"Product":"Laptos", "Quantity":50, "UnitPrice":500000, "Invoiced": "True"},
+			         {"Product":"Impresoras", "Quantity":20, "UnitPrice":400000, "Invoiced": "True"}]
+		},
+		{
+			"Id": "1239010",
+			"Total": 25000000,
+			"Currency": "MXN",
+			"InvoiceLevel": 1,
+			"Date": "03-03-2017",
+			"items":[{"Product":"Telefonos Celulares", "Quantity":30, "UnitPrice":300000, "Invoiced": "True"}]
+		},
+		{
+			"Id": "1239011",
+			"Total": 800000,
+			"Currency": "MXN",
+			"InvoiceLevel": 3,
+			"Date": "29-02-2017",
+			"items":[{"Product":"Sillas", "Quantity":30, "UnitPrice":3000, "Invoiced": "False"},
+			         {"Product":"Laptos", "Quantity":50, "UnitPrice":500000, "Invoiced": "False"},
+			         {"Product":"Impresoras", "Quantity":20, "UnitPrice":400000, "Invoiced": "False"}]
+		},
+		{
+			"Id": "1239012",
+			"Total": 400000,
+			"Currency": "MXN",
+			"InvoiceLevel": 3,
+			"Date": "17-01-2017",
+			"items":[{"Product":"Mesas", "Quantity":20, "UnitPrice":6000, "Invoiced": "False"}]
+		},
+		{
+			"Id": "1239013",
+			"Total": 100000,
+			"Currency": "MXN",
+			"InvoiceLevel": 3,
+			"Date": "04-01-2017",
+			"items":[{"Product":"Telefonos Celulares", "Quantity":30, "UnitPrice":300000, "Invoiced": "True"},
+			         {"Product":"Sillas", "Quantity":30, "UnitPrice":3000, "Invoiced": "False"}]
+		},
+		{
+			"Id": "1239014",
+			"Total": 1000000,
+			"Currency": "MXN",
+			"InvoiceLevel": 3,
+			"Date": "18-02-2017",
+			"items":[{"Product":"Tazas", "Quantity":100, "UnitPrice":4000, "Invoiced": "False"}]
+		},
+		{
+			"Id": "1239015",
+			"Total": 2000000,
+			"Currency": "MXN",
+			"InvoiceLevel": 1,
+			"Date": "07-03-2017",
+			"items":[{"Product":"Impresoras", "Quantity":20, "UnitPrice":400000, "Invoiced": "True"}]
+		}
+	],
+	"PurchaseOrdersStats": [
+		{
+			"Total_Facturas": 15,
+			"No_Facturados": 10,
+			"Facturados": 5
+		}
+		]
+}

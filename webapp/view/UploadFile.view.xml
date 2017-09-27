@@ -1,0 +1,19 @@
+<mvc:View controllerName="com.gmexico.sup.invproccessInvoice.controller.UploadFile" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:F="sap.ui.layout.form" xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:l="sap.ui.layout">
+	<App id="com.gmexico.sup.invproccessInvoice">
+		<Page backgroundDesign="Transparent" showFooter="false" showHeader="false" showSubHeader="false">
+			<VBox class="sapuiSmallMargin" justifyContent="Center" alignItems="Center">
+				<F:SimpleForm title="Enter your files ">
+				    <F:customData>
+				       
+				    </F:customData>
+				</F:SimpleForm>
+		<l:VerticalLayout>
+			<u:FileUploader typeMissmatch="handlePDFTypeMissmatch" fileType="pdf" id="fileUploaderPDF" placeholder="Choose a PDF for Upload..." name="myFileUpload" uploadUrl="upload/" width="400px" tooltip="Upload your file to the local server" uploadComplete="handleUploadPDFComplete"/>
+			<u:FileUploader typeMissmatch="handleXMLTypeMissmatch"  fileType="xml" id="fileUploaderXML" placeholder="Choose a XML for Upload..." name="myFileUpload" uploadUrl="upload/" width="400px" tooltip="Upload your file to the local server" uploadComplete="handleUploadXMLComplete"/>
+			<Button text="Upload Files" press="handleUploadPress" width="400px" />
+		</l:VerticalLayout>
+			</VBox>
+		</Page>
+	</App>
+</mvc:View>

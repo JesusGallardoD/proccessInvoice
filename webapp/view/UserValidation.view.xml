@@ -1,0 +1,23 @@
+<mvc:View controllerName="com.gmexico.sup.invproccessInvoice.controller.UserValidation" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:F="sap.ui.layout.form" xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:l="sap.ui.layout">
+	<App id="com.gmexico.sup.invproccessInvoice">
+		<Page backgroundDesign="Transparent" showFooter="false" showHeader="false" showSubHeader="false">
+			<VBox class="sapuiSmallMargin" justifyContent="Center" alignItems="Center">
+				<Image src="http://www.soycobre.com/wp-content/uploads/2014/08/LOGO-GM.png" width="100%"/>
+				<F:SimpleForm title="Enter your User ">
+				    <F:customData>
+				        <sap.ui.core:CustomData xmlns:sap.ui.core="sap.ui.core" key="w5g.dt.editable" value="false" id="__data10"/>
+				    </F:customData>
+				</F:SimpleForm>
+		<l:VerticalLayout>
+				<Input
+					id = "user"
+					placeholder="User" 
+					value=""
+					width="400px"/>
+			<Button text="Iniciar Sesion" press="onPress" width="400px" />
+		</l:VerticalLayout>
+			</VBox>
+		</Page>
+	</App>
+</mvc:View>

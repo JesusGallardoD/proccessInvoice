@@ -1,0 +1,40 @@
+<mvc:View controllerName="com.gmexico.sup.invproccessInvoice.controller.IconTabBar" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<Page title="Portal de Proveedores">
+		<headerContent>
+			<Button icon="sap-icon://log" press="handleLogOut"/>
+		</headerContent>
+		<IconTabBar id="idIconTabBar" select="handleIconTabBarSelect" class="sapUiResponsiveContentPadding">
+			<items>
+				<IconTabFilter id="AllFilter" showAll="true" count="{/PurchaseOrdersStats/0/Total_Facturas}" text="Ordenes de Compra" key="All" />
+				<IconTabSeparator/>
+				<IconTabFilter id="FacturadosFilter" icon="sap-icon://sys-enter-2" iconColor="Positive" count="{/PurchaseOrdersStats/0/Facturados}" text="Facturados" key="1"/>
+				<IconTabFilter id="NoFilter" icon="sap-icon://error" iconColor="Negative" count="{/PurchaseOrdersStats/0/No_Facturados}" text="Sin Facturar" key="3"/>
+			</items>
+			<content>
+				<Table id="mainTable" items="{/PurchaseOrders}">
+					<items>
+						<ColumnListItem type="Active" press="onRowPress">
+							<cells>
+								<Label text="{Id}" design="Bold"/>
+								<Label text="{ parts: [ {path: 'Total'}, {path: 'Currency'} ], type: 'sap.ui.model.type.Currency'}"/>
+								<Text text="{Date}"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+					<columns>
+						<Column>
+							<Label text="ID"/>
+						</Column>
+						<Column>
+							<Label text="Monto"/>
+						</Column>
+						<Column>
+							<Label text="Fecha"/>
+						</Column>
+					</columns>
+				</Table>
+			</content>
+		</IconTabBar>
+	</Page>
+</mvc:View>
